@@ -47,12 +47,21 @@
 # 回到主分支
 	git checkout main
 # 删除弃用分支
-	git branch -D fix_bug
-	
+	git branch -d fix_bug
+# 查看分支历史
+	git log --graph --pretty=oneline --abbrev-commit
 ```
 
 ## 信息查看
 ```
 # 推荐的git日志查看命令
-	git log --onelline --all --graph
+	git log --oneline --all --graph
+```
+
+## 代码合并
+```
+# 切换到主分支
+	git checkout main
+# 合并子分支
+	git merge fix_bug
 ```
